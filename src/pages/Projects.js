@@ -9,7 +9,7 @@ export default function Projects() {
             <h2 className="title-1">Projects</h2>
             <ul className="projects">
                   {projects.map((item) => <ProjectItem key={item.id} project={item} />)}
-            </ul>
+        </ul>
         </div>
     </main>
   )

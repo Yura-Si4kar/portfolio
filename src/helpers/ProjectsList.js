@@ -1,66 +1,43 @@
-import project01 from '../img/projects/01.jpg';
-import project01Big from '../img/projects/01-big.jpg';
-
-import project02 from '../img/projects/02.jpg';
-import project02Big from '../img/projects/02-big.jpg';
-
-import project03 from '../img/projects/03.jpg';
-import project03Big from '../img/projects/03-big.jpg';
-
-import project04 from '../img/projects/04.jpg';
-import project04Big from '../img/projects/04-big.jpg';
-
-import project05 from '../img/projects/05.jpg';
-import project05Big from '../img/projects/05-big.jpg';
-
-import project06 from '../img/projects/06.jpg';
-import project06Big from '../img/projects/06-big.jpg';
-
 export const projects = [
     {
         id:1,
-        title: 'Gaming streaming portal',
-        skills: 'React, Node.js, MongoDB',
-        img: project01,
-        imgBig: project01Big,
-        gitHubLink: 'https://github.com',
+        title: 'Сайт візитівка',
+        src: 'http://www.vse-pro-eco.space/',
+        skills: 'HTML, SASS, GSAP, Telegram Bot',
     },
     {
         id:2,
-        title: 'Video service',
-        img: project02,
-        imgBig: project02Big,
-        skills: 'React, PHP, MySql',
-        gitHubLink: 'https://github.com',
+        title: 'Юридична компанія Hlegals',
+        skills: 'HTML, CSS, JS',
+        src: 'https://hillel-html-css.netlify.app/',
+        gitHubLink: 'https://github.com/Yura-Si4kar/hillel_html_css',
     },
     {
         id:3,
-        title: 'Video portal',
-        img: project03,
-        imgBig: project03Big,
-        skills: 'Vue JS, Node.js, MongoDB',
-        gitHubLink: 'https://github.com',
+        title: 'Cases planner',
+        skills: 'JS, MVC, REST API',
+        src: 'https://cases-planner.netlify.app/',
+        gitHubLink: 'https://github.com/Yura-Si4kar/planner-mvc',
     },
     {
         id:4,
-        title: 'Dating app',
-        img: project04,
-        imgBig: project04Big,
-        skills: 'React Native',
-        gitHubLink: 'https://github.com',
+        title: 'Personal cryptoconverter',
+        skills: 'HTML, CSS, JS, REST API',
+        src: 'https://personalcryptoconverter.netlify.app/',
+        gitHubLink: 'https://github.com/Yura-Si4kar/currency-exchanger',
     },
     {
         id:5,
-        title: 'Landing',
-        img: project05,
-        imgBig: project05Big,
-        skills: 'HTML, CSS, JS',
+        title: 'Restaurant App',
+        skills: 'JS, React, SASS, Redux, MUI, Express, Mongoose',
+        src: 'https://in-loft.vercel.app/',
+        gitHubLink: 'https://github.com/Yura-Si4kar/restaurant-inloft',
     },
     {
         id:6,
-        title: 'Gamming community',
-        img: project06,
-        imgBig: project06Big,
-        skills: 'React, PHP, MySql',
-    },
+        title: 'mp3-player',
+        skills: 'JS, React, SASS, MobX, React-Bootstrap, Firebase',
+        src: 'https://mp3-player-three.vercel.app/login',
+        gitHubLink: 'https://github.com/Yura-Si4kar/mp3-player',
+    }
 ]

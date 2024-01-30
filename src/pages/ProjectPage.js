@@ -13,11 +13,26 @@ export default function ProjectPage() {
         <div className="project-details">
           <h1 className="title-1">{project.title}</h1>
 
-          <img src={project.imgBig} alt="" className="project-details__cover" />
+          <iframe 
+            title={project.title}
+            src={project.src}
+            width="850" 
+            height="650" 
+            style={{
+              border: '1px solid rgba(0, 0, 0, 0.5)',
+              borderRadius: '15px'
+            }}
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
 
           <div className="project-details__desc">
             <p>{project.skills}</p>
+            <a href={project.src}>Link</a>
           </div>
+
 
           {project.gitHubLink && <GitHubBtn link={project.gitHubLink} />}          
         </div>

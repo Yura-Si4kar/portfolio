@@ -6,7 +6,16 @@ export default function ProjectItem({ project }) {
   return (
     <NavLink to={`/project/${project.id}`}>
       <li className="project">
-        <img src={project.img} alt="Project img" className="project__img" />
+        <iframe 
+          title={project.title}
+          src={project.src}
+          className='project__iframe'
+          allowFullScreen="" 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+          scrolling='no'
+        >
+        </iframe>
         <h3 className="project__title">{project.title}</h3>
       </li>
     </NavLink>
