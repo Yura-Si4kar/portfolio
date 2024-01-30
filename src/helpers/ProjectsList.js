@@ -2,7 +2,7 @@ export const projects = [
     {
         id:1,
         title: 'Сайт візитівка',
-        src: 'http://www.vse-pro-eco.space/',
+        src: 'https://www.vse-pro-eco.space/',
         skills: 'HTML, SASS, GSAP, Telegram Bot',
     },
     {
