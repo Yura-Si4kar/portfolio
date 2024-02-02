@@ -145,6 +145,14 @@ body {
 	text-align: center;
 }
 
+	.project-details iframe {
+		width: 100%;
+
+		@media (miin-width: 850px) {
+			width: 850px;
+		}
+	}
+
 .project-details__cover {
 	max-width: 100%;
 	margin-bottom: 40px;

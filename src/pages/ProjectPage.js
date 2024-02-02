@@ -16,7 +16,6 @@ export default function ProjectPage() {
           <iframe 
             title={project.title}
             src={project.src}
-            width="850" 
             height="650" 
             style={{
               border: '1px solid rgba(0, 0, 0, 0.5)',
@@ -25,6 +24,7 @@ export default function ProjectPage() {
             allowFullScreen="" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
+            scrolling='no'
           >
           </iframe>
 
