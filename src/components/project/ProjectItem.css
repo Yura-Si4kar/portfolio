@@ -1,15 +1,23 @@
 .project {
-	max-width: 375px;
+	max-width: 290px;
 	background-color: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
+
+	@media (min-width: 425px) {
+		max-width: 375px;
+	}
 }
 
 .project__iframe {
-	width: 375px;
-	height: 375px;
+	width: 290px;
+	height: 290px;
 	border:0;
 	border-radius: 15px 15px 0 0;
+
+	@media (min-width: 425px) {
+		width: 375px;
+	}
 }
 
 .project__title {

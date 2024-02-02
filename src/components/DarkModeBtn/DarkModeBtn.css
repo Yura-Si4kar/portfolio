@@ -1,7 +1,8 @@
 /* Dark mode btn */
 
 .dark-mode-btn {
-	order: 9;
+	grid-area: btn;
+	justify-self: flex-end;
 
 	position: relative;
 	display: flex;

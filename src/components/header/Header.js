@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
       <div className='container'>
         <article className='header__block'>
-          <div style={{width: 50 + '%'}}>
+          <div className='header__block-img'>
             <img src={my_photo} width={500} height={400} alt='my_photo'/>
           </div>
             <div className="header__wrapper">
@@ -18,7 +18,7 @@ export default function Header() {
                 <div className="header__text">
                     <p>with passion for learning and creating.</p>
                 </div>
-                <a href="#!" className="btn">Download CV</a>
+                <a href="../../Profile.pdf" className="btn" download="Profile.pdf">Download CV</a>
           </div>
         </article>
       </div>
