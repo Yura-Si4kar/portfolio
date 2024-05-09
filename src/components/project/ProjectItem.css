@@ -1,5 +1,5 @@
 .project {
-	max-width: 290px;
+	max-width: 320px;
 	background-color: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
 	border-radius: 10px;
@@ -10,7 +10,7 @@
 }
 
 .project__iframe {
-	width: 290px;
+	width: 320px;
 	height: 290px;
 	border:0;
 	border-radius: 15px 15px 0 0;
