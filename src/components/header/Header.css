@@ -27,9 +27,14 @@
 	.header__block-img {
 		width: 100%;
 
+		
 		@media (min-width: 576px) {
 			width: 50%;
 		}
+	}
+	
+	.header__block-img img {
+		border-radius: 15px;
 	}
 }
 

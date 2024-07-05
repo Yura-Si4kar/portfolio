@@ -5,13 +5,19 @@ import detectDarkMode from '../../utils/detectDarkMode';
 import sun from '../../img/icons/sun.svg';
 import moon from '../../img/icons/moon.svg';
 import './DarkModeBtn.css';
+import useGsapAnimation from '../../hooks/useGsapAnimation';
 
 export default function DarkModeBtn() {
+    const btnNormal = 'dark-mode-btn';
+    const btnActive = 'dark-mode-btn dark-mode-btn--active';
     const [darkMode, setDarkMode] = useLocalStorage('darkMode', detectDarkMode());
 
-    const toggleDarkMode = () => {
+    const toggleDarkMode = (e) => {
+        e.preventDefault();
         setDarkMode((currentValue) => currentValue === 'light' ? 'dark' : 'light')
     }
+
+    useGsapAnimation('.' + btnNormal, { delay: 1, x: 50, opacity: 0, duration: 2, ease: 'elastic.out' }, '.' + btnNormal);
 
     useEffect(() => {
         if (darkMode === 'dark') {
@@ -28,8 +34,6 @@ export default function DarkModeBtn() {
         })
     }, [setDarkMode]);
 
-    const btnNormal = 'dark-mode-btn';
-    const btnActive = 'dark-mode-btn dark-mode-btn--active';
 
     return (
         <button className={darkMode === 'dark' ? btnActive : btnNormal} onClick={toggleDarkMode}>

@@ -1,7 +1,48 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import Header from '../components/header/Header'
+import useGsapAnimation from '../hooks/useGsapAnimation';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    useGsapAnimation('.title-2', { y: -200, opacity: 0, duration: 2, ease: 'power3.out' }, '.title-2');
+    useLayoutEffect(() => {
+        const contentSelector = document.querySelector('.content-list__item p');
+        
+            if (contentSelector) {
+                // Функція для розбивки тексту на букви
+                function splitTextToLetters(textElement) {
+                    const content = textElement.textContent;
+                    textElement.innerHTML = content.replace(/\S/g, "<span class='letter'>$&</span>");
+                }
+
+                // Виклик функції для розбивки тексту
+                splitTextToLetters(contentSelector);
+
+                // Анімація для букв
+                gsap.fromTo('.letter', {
+                    opacity: 0,
+                    scale: 0,
+                    y: 50
+                }, {
+                    opacity: 1,
+                    scale: 1,
+                    y: 0,
+                    duration: 0.6,
+                    stagger: 0.015,
+                    ease: "back.out(1.7)",
+                    scrollTrigger: {
+                        trigger: '.content-list__item',
+                        start: 'top 80%',
+                        toggleActions: 'play none none none',
+                    }
+                });
+            }
+        }, []);
+    useGsapAnimation('.education li', { x: 100, opacity: 0, duration: 2, ease: 'power3.out', stagger: .5 }, '.education');
+    
   return (
     <>
         <Header />
@@ -17,7 +58,7 @@ export default function Home() {
                         </li>
                     </ul>
 
-                    <ul>
+                    <ul className='education'>
                         <li>
                             <h3 className="title-2">Education</h3>
                         </li>
