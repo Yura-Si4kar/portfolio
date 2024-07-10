@@ -6,7 +6,7 @@ import useGsapAnimation from '../../hooks/useGsapAnimation';
 export default function Header() {
   useGsapAnimation('.header__block-img', { rotate: '-=360', duration: 1.5, scale: 0.1, opacity: 0, ease: 'expo.in' }, '.header__block-img img');
   useGsapAnimation('.header__title', { opacity: 0, duration: 1.5, y: -50, ease: 'power3.out' }, '.header__title');
-  useGsapAnimation('.header__text', { opacity: 0, duration: 1.5, x: 200, ease: 'power3.out' }, '.header__text');
+  useGsapAnimation('.header__text', { opacity: 0, duration: 1.5, x: -200, ease: 'power3.out' }, '.header__text');
   useGsapAnimation('.btn', { opacity: 0, duration: 1.5, y: 200, ease: 'power3.out' }, '.header__text');
 
   return (

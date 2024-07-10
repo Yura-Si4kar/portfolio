@@ -17,7 +17,7 @@ export default function DarkModeBtn() {
         setDarkMode((currentValue) => currentValue === 'light' ? 'dark' : 'light')
     }
 
-    useGsapAnimation('.' + btnNormal, { delay: 1, x: 50, opacity: 0, duration: 2, ease: 'elastic.out' }, '.' + btnNormal);
+    useGsapAnimation('.' + btnNormal, { delay: 1, y: -50, opacity: 0, duration: 2, ease: 'elastic.out' }, '.' + btnNormal);
 
     useEffect(() => {
         if (darkMode === 'dark') {

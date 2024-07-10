@@ -41,7 +41,7 @@ export default function Home() {
                 });
             }
         }, []);
-    useGsapAnimation('.education li', { x: 100, opacity: 0, duration: 2, ease: 'power3.out', stagger: .5 }, '.education');
+    useGsapAnimation('.education li', { x: -100, opacity: 0, duration: 2, ease: 'power3.out', stagger: .5 }, '.education');
     
   return (
     <>
